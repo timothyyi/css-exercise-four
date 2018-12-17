@@ -1,4 +1,12 @@
+
 body {
+
   background-color: #dadada;
-  font-size: 10px;
+  font-size: 12px;
+
+}
+
+.preview baku {
+  background-image: url(/images/baku.jpg);
+  background-size: cover;
 }
