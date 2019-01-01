@@ -1,4 +1,6 @@
 
+
+
 body {
 
   background-color: #fff;
@@ -7,6 +9,7 @@ body {
 }
 
 .preview {
+  display: inline-block;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -69,7 +72,7 @@ h1 {
     margin: auto;
   }
   .preview {
-    width: 50%;
+    width: 60%;
     margin: 1%;
   }
 }
