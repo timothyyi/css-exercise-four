@@ -1,12 +1,75 @@
 
 body {
 
-  background-color: #dadada;
+  background-color: #fff;
   font-size: 12px;
 
 }
 
-.preview baku {
-  background-image: url(/images/baku.jpg);
+.preview {
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: : #d8d8d8;
+  height: 200px;
+  width: 50%;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.preview h1 {
+  text-align: center;
+  padding: 20%;
+}
+
+
+.container {
+  width: 100%;
+  margin: auto;
+
+}
+
+.baku {
+  background-image: url(../images/baku.jpg);
+}
+
+.london {
+  background-image: url(../images/london.png);
+}
+
+.madrid {
+  background-image: url(../images/madrid.jpg);
+}
+
+.rome {
+  background-image: url(../images/rome.jpg);
+}
+
+
+/* To make one column */
+@media screen and (min-width: 600px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  .preview {
+    width: 48%;
+    height: 200px;
+  }
+}
+
+
+/* On screens that are 900px wide or less, go from four columns to two columns */
+@media screen and (min-width: 900px) {
+  .container {
+    width: 50%;
+    margin: auto;
+  }
+  .preview {
+    width: 50%;
+    margin: 1%;
+  }
 }
