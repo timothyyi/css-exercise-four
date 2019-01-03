@@ -1,9 +1,7 @@
 
-
-
 body {
 
-  background-color: #fff;
+  background-color: #d8d8d8;
   font-size: 12px;
 
 }
@@ -13,14 +11,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: : #d8d8d8;
-  height: 200px;
-  width: 50%;
+  height: 100px;
+  width: 150px;
   margin: auto;
+  padding: 32px;
 }
 
 h1 {
   text-align: center;
+  margin: auto;
+  padding: 20px;
 }
 
 .preview h1 {
@@ -51,16 +51,30 @@ h1 {
   background-image: url(../images/rome.jpg);
 }
 
+/* To make one column */
+@media screen and (max-width: 599px) {
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  .preview {
+    width: 40%;
+    height: 150px;
+    margin: auto;
+  }
+}
+
 
 /* To make one column */
 @media screen and (min-width: 600px) {
   .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
   .preview {
-    width: 48%;
-    height: 200px;
+    width: 30%;
+    height: 150px;
+    margin: auto;
   }
 }
 
@@ -68,11 +82,12 @@ h1 {
 /* On screens that are 900px wide or less, go from four columns to two columns */
 @media screen and (min-width: 900px) {
   .container {
-    width: 50%;
+    width: 100%;
     margin: auto;
   }
   .preview {
-    width: 60%;
-    margin: 1%;
+    width: 15%;
+    height: 100px;
+    margin: auto;
   }
 }
